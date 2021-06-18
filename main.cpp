@@ -7,5 +7,5 @@ int main() {
   tTriangulo t;
   
   t.insere(8, 10, 6);
-  t.imprime(t);
+  t.perimetro(t);
 }

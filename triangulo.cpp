@@ -22,7 +22,7 @@ struct tTri2{
 
     int perimetro(tTriangulo t){
       int perim = lado1+lado2+lado3;
-      //cout << "calculou perimetro  " << endl;
+      cout << "calculou perimetro  " << endl;
       return perim; 
     }
 
