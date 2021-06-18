@@ -1,0 +1,11 @@
+#include <iostream>
+#include "triangulo.cpp"
+
+using namespace std;
+
+int main() {
+  tTriangulo t;
+  
+  t.insere(8, 10, 6);
+  t.imprime(t);
+}
