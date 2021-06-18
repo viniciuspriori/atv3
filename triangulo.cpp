@@ -23,7 +23,40 @@ struct tTri2{
     int perimetro(tTriangulo t){
       int perim = lado1+lado2+lado3;
       cout << "calculou perimetro  " << endl;
-      return perim; 
+      return perim;
     }
+    tTri2 doismenores (tTriangulo t){
+      tTri2 tm;
+      if(lado1>lado2 && lado1>lado3){
+        tm.lm1=lado2;
+        tm.lm2=lado3;
+      }
+      if(lado2>lado1 && lado2>lado3){
+        tm.lm1=lado1;
+        tm.lm2=lado3;
+      }
+      if(lado3>lado2 && lado3>lado1){
+        tm.lm1=lado2;
+        tm.lm2=lado1;    
+      }
+     cout << "calculou 2 lados menores, que sao: " << tm.lm1 << " e " << tm.lm2 << endl; 
+     return tm; 
+    };
+
+     float area(tTriangulo t){
+      tTri2 ta;
+      ta = doismenores(t);
+      float ar = ((ta.lm1*ta.lm2)/2);
+      cout << "calculou area " << endl;
+      return ar;  
+     }
+
+     float hipotenusa(tTriangulo t){
+       tTri2 ta;
+       ta = doismenores(t);
+       float hip = sqrt(pow(ta.lm1,2)+pow(ta.lm2,2));
+       cout << "calculou hip" << endl;
+       return hip;
+     }
 
  };
