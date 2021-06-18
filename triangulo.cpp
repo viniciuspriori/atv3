@@ -17,7 +17,7 @@ struct tTri2{
         lado1 = la1;
         lado2 = la2;
         lado3 = la3;
-        cout << "inseriu " << endl;
+        //cout << "lados inseridos na struct " << endl;
     }
 
     int perimetro(tTriangulo t){
@@ -62,11 +62,13 @@ struct tTri2{
       void imprime(tTriangulo){
         tTriangulo t;
       
-        cout << "--------" << endl;
+        cout << "--------------" << endl;
         cout << "perimetro: " << (int) perimetro(t) << endl;
 
         cout << "area: " << (float) area(t) << endl;
 
         cout << "hipotenusa: " << (float) hipotenusa(t) << endl;
+
+        cout << "--------------" << endl;
        }
  };
