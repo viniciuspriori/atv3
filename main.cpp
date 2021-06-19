@@ -1,11 +1,12 @@
 #include <iostream>
 #include "triangulo.h"
 
+using namespace std;
+
 int main() {
   tTriangulo t;
-  t.lado1 = 3;
-  t.lado2 = 4;
-  t.lado3 = 5;
   
-  imprime(t);
+  t.insere(60, 100, 80);
+  t.imprime(t);
+
 }
